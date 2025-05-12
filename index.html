@@ -10,12 +10,19 @@
 <body>
     <header>
         <h1>Itzco Dev Studio</h1>
-        <nav>
+        <button id="menu-toggle">☰ Menú</button>
+        <nav id="menu" style="display: none;">
             <ul>
-                <li><a href="#about">Sobre Nosotros</a></li>
-                <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#about">Sobre Nosotros</a></li>
+            <li><a href="#projects">Proyectos</a></li>
             </ul>
         </nav>
+        <script>
+            document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+            });
+        </script>
     </header>
 
     <main>

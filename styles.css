@@ -41,7 +41,7 @@ nav a:hover {
 /* Main content styles */
 main {
     padding: 2rem;
-    background-color: black;
+    background-color: rgb(180, 180, 180);
     margin: 1rem auto;
     max-width: 800px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

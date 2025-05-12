@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body style="background-color: rgb(30,30,30);">
-    <header style="background-color: rgb(30, 50, 90);" >
+    <header style="background-color: rgb(30, 50, 90);"></header>
         <h1>Itzco Dev Studio</h1>
         <button id="menu-toggle">☰</button>
         <nav id="menu" style="display: none;">
-            <ul>
-            <a href="#about">Sobre Nosotros</a>
-            <a href="#projects">Proyectos</a>
+            <ul style="list-style-type: none; padding: 0; text-align: center;"></ul>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#projects">Proyectos</a></li>
             </ul>
         </nav>
         <script>
             document.getElementById('menu-toggle').addEventListener('click', function() {
-            const menu = document.getElementById('menu');
-            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+                const menu = document.getElementById('menu');
+                menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
             });
         </script>
-        <marquee style="color: rgb(0, 0, 0); height: 8vh;" ></marquee>
+        <marquee style="color: rgb(0, 0, 0); height: 8vh;"></marquee>
     </header>
 
     <main>
